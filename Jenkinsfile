@@ -21,6 +21,7 @@ pipeline {
         stage('Execute Action') {
             steps {
                 echo "Executing Taskfile action..."
+                sh "pwd"
                 sh "docker ps -a"
             }
         }
